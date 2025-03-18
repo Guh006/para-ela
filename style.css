@@ -1,0 +1,111 @@
+body {
+    font-family: 'Georgia', serif;
+    background-color: #ffe6f2;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ff99cc;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    border-bottom: 5px solid #ff6699;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+.gallery {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 2.5em;
+    color: #b30047;
+}
+
+.photos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    justify-items: center;
+}
+
+.photos img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin: 10px;
+    border: 5px solid #ff99cc;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.photos img:hover {
+    transform: scale(1.1);
+}
+
+.photo-text {
+    margin: 40px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.photo-text .text {
+    font-size: 1.2em;
+    color: #800040;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+.about {
+    margin: 40px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    color: #b30047;
+}
+
+.about p {
+    font-size: 1.2em;
+    color: #800040;
+    line-height: 1.6;
+}
+
+body::before {
+    content: "❤";
+    font-size: 10em;
+    color: rgba(255, 153, 204, 0.3);
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    z-index: -1;
+}
+
+body::after {
+    content: "❤";
+    font-size: 8em;
+    color: rgba(255, 153, 204, 0.2);
+    position: absolute;
+    top: 60%;
+    right: 10%;
+    z-index: -1;
+}
